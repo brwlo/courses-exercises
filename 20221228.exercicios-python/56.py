@@ -10,7 +10,7 @@ for c in range(1,5):
     sexo  = input('sexo (m/f): ')
     idade = int(input('idade: '))
     media += idade
-    if idade > maior:
+    if sexo == 'm' and idade > maior:
         maior = idade
         velho = nome
     if sexo == 'f' and idade < 20:
